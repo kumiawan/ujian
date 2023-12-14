@@ -1,0 +1,112 @@
+========================================================================================================================
+	Ada berapa Topologi yang anda ketahui? Jelaskan masing-masing!
+========================================================================================================================
+1.Topologi Bus, semua perangkat terhubung ke bus tunggal atau kabel pusat.
+Data dikirimkan ke seluruh jaringan dan hanya perangkat yang dituju yang akan mengambil dan memproses data tersebut.
+jika kabel pusat rusak, seluruh jaringan dapat terganggu.
+
+2.Topologi Star,semua perangkat terhubung ke satu pusat atau "hub" yang berfungsi sebagai titik pusat.
+Hub ini bisa berupa switch atau router. Keuntungan dari topologi ini adalah jika satu perangkat rusak,
+tidak akan mempengaruhi perangkat lain dalam jaringan.
+
+3.Topologi Ring,setiap perangkat terhubung dengan dua perangkat lainnya, membentuk cincin.
+Data mengalir dalam satu arah melalui cincin hingga mencapai tujuan.
+Kelemahan utama topologi ini adalah jika satu perangkat atau kabel rusak, seluruh jaringan dapat terganggu.
+
+4.Topologi Tree,kombinasi dari topologi bintang dan bus.
+Ada satu "backbone" utama (seperti bus) yang kemudian terhubung ke banyak "cabang" atau "subnets" yang menggunakan topologi bintang.
+Ini cocok untuk jaringan besar yang memerlukan organisasi hierarkis.
+
+5.Topologi Hybird,campuran dari dua atau lebih topologi yang ada.
+Misalnya, saya dapat memiliki kombinasi topologi bintang dan mesh atau topologi bus dan pohon dalam satu jaringan.
+
+6.Topologi Mesh,setiap perangkat terhubung dengan setiap perangkat lain dalam jaringan. Ini menciptakan redundansi tinggi dan meningkatkan keandalan, tetapi juga bisa menjadi mahal dan rumit dalam penerapannya.
+
+
+========================================================================================================================
+	Sebutkan komponen-komponen pada OSI 7 Layer? Jelaskan fungsi dari masing-masing komponen!
+========================================================================================================================
+Komponen pada OSI 7 Layer diantaranya sebagai berikut :
+1. Application,  Lapisan tertinggi dalam Model OSI dan berisi aplikasi dan protokol yang digunakan oleh pengguna akhir.
+Ini termasuk berbagai layanan dan aplikasi seperti web browsers, HTTP, FTP, dan SMTP.
+
+2. Presentasion, Bertanggung jawab untuk mengelola format data, enkripsi, kompresi,
+dan konversi antara format data yang berbeda agar perangkat yang berkomunikasi dapat memahami satu sama lain.
+
+3. Sesion, Mengelola koneksi antara aplikasi di perangkat yang berkomunikasi.
+Ini mencakup pengendalian dialog, pengelolaan sesi, dan sinkronisasi data.
+
+4. Transport, Lapisan ini mengatur komunikasi antara dua perangkat akhir dan memastikan pengiriman data yang andal dan terjamin.
+Ini mencakup pemecahan paket menjadi potongan-potongan kecil (segmentasi) dan pengendalian aliran data.
+
+5. Network,Lapisan ini berfokus pada rute pengiriman data melalui jaringan yang kompleks,
+termasuk pengalihan paket, routing, dan penanganan alamat logis.
+
+6. Data Link,Lapisan ini bertanggung jawab untuk mengelola akses ke media fisik,
+mendeteksi dan memperbaiki kesalahan yang terjadi dalam pengiriman data, serta mengatur aliran data antara dua perangkat dalam satu segmen jaringan.
+
+7. Physical, berfokus pada perangkat keras fisik, seperti kabel, konektor,
+dan perangkat fisik lainnya yang digunakan untuk mengirim data dalam bentuk sinyal fisik.
+
+
+========================================================================================================================
+	Sebutkan dan beri penjelasan media transmisi yang ada pada jaringan komputer!
+========================================================================================================================
+Media transmisi adalah sarana fisik atau saluran yang digunakan untuk 
+mengirimkan data atau sinyal dari satu perangkat ke perangkat lain dalam jaringan komputer.
+
+1. Kabel tembaga
+ a) Cable UTP , Salah satu media transmisi yang paling umum digunakan dalam jaringan LAN (Local Area Network).
+ Kabel UTP memiliki beberapa pasangan kawat tembaga yang diisolasi dan dikepang bersama. Ini digunakan untuk menghubungkan perangkat seperti komputer dan switch.
+b) Cable Coaxial, Kabel ini memiliki inti tembaga yang dilapisi oleh lapisan isolasi dan pelindung.
+Ini digunakan secara luas pada jaringan kabel televisi, tetapi tidak sepopuler UTP dalam jaringan komputer.
+
+2. Fiber Optic
+Fiber optik menggunakan serat kaca atau plastik yang sangat halus untuk mentransmisikan data dalam bentuk cahaya.
+
+3. Wireless
+a) Wifi, media transmisi nirkabel yang paling umum digunakan dalam jaringan lokal.
+Wi-Fi mengandalkan gelombang radio untuk mentransmisikan data antara perangkat dan akses poin nirkabel.
+Ini sangat cocok untuk jaringan rumah, bisnis, dan umum.
+b) Bluetooth, digunakan untuk menghubungkan perangkat seperti headset nirkabel, keyboard , dan mouse ke komputer atau perangkat lain dalam jarak pendek.
+c) Satelite, digunakan untuk menghubungkan jaringan di lokasi yang terpencil atau tidak memiliki infrastruktur kabel. Data dikirimkan melalui satelit komunikasi.
+
+4. Media transimsi litstrik (Power Line)
+Media transmisi listrik menggunakan kabel listrik yang sudah ada untuk mengirimkan data.
+Ini sering digunakan dalam konfigurasi rumah pintar dan jaringan listrik cerdas.
+
+========================================================================================================================
+	Apa yang anda ketahui mengenai firewall? Bagaimana sebuah firewall dapat bekerja?
+========================================================================================================================
+Firewall ialah sebuah software keamanan yang digunakan untuk meminimalisir kerusakan
+secara fisik maupun non-fisik serta membatasi akses keluar masuknya traffic internet yang berbahaya.
+Adapun cara kerja firewall sebagai berikut :
+1.Paket Filtering, Firewall dapat melakukan pengawasan terhadap setiap paket data yang melintas melalui jaringan berdasarkan aturan tertentu. 
+Aturan ini dapat mengizinkan atau memblokir paket berdasarkan alamat IP, port, atau protokol tertentu. Jika paket memenuhi kriteria yang diizinkan,
+firewall akan membiarkannya melewati jaringan. jika tidak, firewall akan memblokirnya.
+
+2.Stateful Inspection, Firewall jenis ini melacak status koneksi aktif dan memutuskan apakah suatu paket data masuk sesuai dengan status koneksi yang sah.
+Ini memungkinkan firewall untuk lebih cerdas dalam mengizinkan atau memblokir lalu lintas, karena ia dapat memahami konteks koneksi.
+
+3.Proxy Firewall, Proxy firewall bertindak sebagai perantara antara jaringan internal dan eksternal.
+Ketika perangkat dalam jaringan internal ingin berkomunikasi dengan luar, mereka terhubung melalui proxy, yang kemudian membuat permintaan ke luar.
+Ini memungkinkan firewall untuk melakukan pemeriksaan lebih lanjut terhadap data yang dikirimkan dan diterima.
+
+4.Appclication Firewall, Firewall ini beroperasi pada lapisan aplikasi dalam model OSI.
+Mereka dapat mengidentifikasi protokol aplikasi tertentu, seperti HTTP atau FTP, dan memeriksa trafik tersebut dengan lebih detail.
+Ini memungkinkan firewall untuk mengimplementasikan aturan yang sangat khusus, seperti memblokir akses ke situs web tertentu atau aplikasi.
+
+========================================================================================================================
+	Apa yang anda ketahui mengenai tunneling? Bagaimana sebuah tunneling dapat bekerja?
+========================================================================================================================
+Tunneling adalah teknik yang digunakan dalam jaringan komputer untuk mengirimkan data melalui jaringan yang tidak akan secara alami mengizinkan data tersebut untuk melintas. menciptakan jalur virtual yang aman untuk data melintasi jaringan yang mungkin tidak aman. Cara kerja tunneling seperti ini :
+
+1.Mengemas data, Paket ini berisi informasi tentang sumber, tujuan, dan data asli yang akan dikirimkan yang telah dienkapsulasi.
+2.Pengiriman melalui terowongan, Data yang sudah dienkapsulasi dikirimkan melalui terowanan atau jalur yang telah ditentukan. Terowanan ini bisa melintasi jaringan publik seperti internet atau jaringan pribadi yang aman.
+3.Dekapsulasi data, Ketika data mencapai ujung terowanan, penerima akan melakukan dekapsulasi atau mengeluarkan data asli dari paket yang telah dienkapsulasi.
+4.Penerima akhir, Data asli kemudian disampaikan ke penerima akhir sesuai dengan protokol yang sesuai.
+
+
+
+
+

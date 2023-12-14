@@ -1,0 +1,16 @@
+ a) BINARY TREE
+            J
+           / \
+          R   D
+         / \   \
+        G   T   E
+       / \     / \
+      M   H   P   A
+         / \
+        F   Q
+      
+b ) Menentukan
+inorder : M G F H R J T P E Q A D
+postorder : M F H G R Q E P T A D J
+preorder : J R G M H F T E P A Q D
+
